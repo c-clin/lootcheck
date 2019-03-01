@@ -17,7 +17,7 @@ const balance = (state = 0, actions) => {
       return state - actions.withdrawal;
     }
     default: {
-      return parseInt(read_cookie(BALANCE_COOKIE), 10 || state);
+      return state;
     }
   }
 };
