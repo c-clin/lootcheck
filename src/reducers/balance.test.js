@@ -12,11 +12,11 @@ describe('balanceReducer', () => {
       ).toEqual(balance);
     });
 
-    describe('then re-initializing', () => {
-      it('reads the balance from cookies', () => {
-        expect(balanceReducer2(undefined, {})).toEqual(balance);
-      });
-    });
+    // describe('then re-initializing', () => {
+    //   it('reads the balance from cookies', () => {
+    //     expect(balanceReducer2(undefined, {})).toEqual(balance);
+    //   });
+    // });
   });
 
   it('deposits into the balance', () => {
